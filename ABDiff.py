@@ -181,6 +181,7 @@ def Diff(v1Path,v2Path,diffPath):
 if __name__ == '__main__':
 	if len(sys.argv) != 4:
 		print("Usage " + sys.argv[0] + " oldABPath  newABPath  pathPath")
-		return
-	Diff(argv[1], argv[2], argv[3])
+        else:
+            Diff(sys.argv[1], sys.argv[2], sys.argv[3])
+
 
