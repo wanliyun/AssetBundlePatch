@@ -172,7 +172,7 @@ def Diff(v1Path,v2Path,diffPath):
 	writeFile(tmpFile1, content1)
 	writeFile(tmpFile2, content2)
 
-	os.system("bsdiff.exe " + tmpFile1 + " " + tmpFile2 + " " + diffPath)
+	os.system("bsdiff " + tmpFile1 + " " + tmpFile2 + " " + diffPath)
 	os.unlink(tmpFile1)
 	os.unlink(tmpFile2)
 
